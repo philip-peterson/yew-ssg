@@ -12,10 +12,7 @@ trait Site {
     fn generate_pages() -> Box<[Rc<dyn GeneratedPage>]>;
 }
 
-
-struct MySite {
-
-}
+struct MySite {}
 
 impl Site for MySite {
     fn generate_pages() -> Box<[Rc<dyn GeneratedPage>]> {

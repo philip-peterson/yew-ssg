@@ -5,6 +5,6 @@ pub struct HomePage {}
 
 impl GeneratedPage for HomePage {
     fn get_route(&self) -> String {
-        return "/".to_string()
+        return "/".to_string();
     }
 }

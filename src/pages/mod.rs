@@ -1,6 +1,6 @@
 mod contact;
-mod home;
 mod faq;
+mod home;
 
 pub use contact::ContactPage;
 pub use faq::FAQPage;
