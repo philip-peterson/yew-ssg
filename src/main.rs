@@ -1,9 +1,8 @@
 mod pages;
-
 use pages::*;
-
 use std::rc::Rc;
 
+// These are defined by yew-ssg
 pub trait GeneratedPage {
     fn get_route(&self) -> String;
 }
@@ -12,6 +11,7 @@ trait Site {
     fn generate_pages() -> Box<[Rc<dyn GeneratedPage>]>;
 }
 
+// An example definition of a SSG website is below:
 struct MySite {}
 
 impl Site for MySite {
@@ -23,8 +23,4 @@ impl Site for MySite {
         ];
         all_pages.into_boxed_slice()
     }
-}
-
-fn main() {
-    println!("Hello, world!");
 }
